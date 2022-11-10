@@ -1,72 +1,104 @@
 body {
-    color: #343042;
+  color: #343042;
+}
+
+.navbar {
+  padding: 1%;
+  background-color: #FFF0F9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 5%;
+ }
+
+.project-item {
+  padding: 2.5% 1% 1% 2.5%;
+}
+
+.long-text {
+  margin: 0 20% 0 20%;
+}
+
+.light {
+  opacity: 70%;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #343042;
+}
+
+a:hover {
+  color: #D30C7B;
+}
+
+footer {
+  background-color: #FFB2E0;
+  padding: 1.5%;
+}
+
+#copyright {
+  text-align: right;
+}
+
+.topnav {
+  background-color: #FFF9FC;
+  overflow: hidden;
+  color: #343042;
+  position: sticky;
+  top: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #D30C7B;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  font-weight: bold;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-  
-  .navbar {
-    padding: 1%;
-    background-color: #FFF0F9;
-    position: sticky;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
     top: 0;
-    z-index: 99;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 1%;
   }
-  
-  .nav-menu {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      list-style-image: none;
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-  
-  .menu-item {
-      display: inline-block;
-      margin-left: 10px;
-  }
-  
-  .bar {
-      width: 20px;
-      height: 3px;
-      background-color: black;
-      margin: 4px auto;
-  }
-  
-  .menu-icon {
-      display: none;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .section {
-    margin-bottom: 5%;
-   }
-  
-  .project-item {
-    padding: 2.5% 1% 1% 2.5%;
-  }
-  
-  .long-text {
-    margin: 0 20% 0 20%;
-  }
-  
-  .light {
-    opacity: 70%;
-  }
-  
-  a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #343042;
-  }
-  
-  footer {
-    background-color: #FFBDE5;
-    padding: 1.5%;
-  }
-  
-  #copyright {
-    text-align: right;
-  }
+}
